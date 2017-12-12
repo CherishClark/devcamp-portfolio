@@ -9,23 +9,33 @@
     <meta name ="keywords" content="<%= @seo_keywords %>" />
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
 
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <div class="site-wrapper">
 
-    <%= render "shared/nav", location: 'top' %>
+      <div class="site-wrapper-inner">
 
-    <%= login_helper %>
+        <div class="cover-container">
 
-    <%= yield %>
+          <%= render "shared/application_nav" %>
 
-    <%= copyright_generator %>
-    <%= source_helper("application")%>
-    
-  </body>
+          <%= login_helper %>
+
+          <%= yield %>
+
+          <%= copyright_generator %>
+
+          <%= source_helper("application")%>
+        </div>
+
+      </div>
+
+    </div>
+
+   </body>
 </html>
