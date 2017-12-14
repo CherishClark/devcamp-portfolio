@@ -1,4 +1,9 @@
 @import "bootstrap";
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> design
 /*
  * Globals
  */
@@ -42,7 +47,12 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
+<<<<<<< HEAD
   box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+=======
+  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+>>>>>>> design
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -73,7 +83,11 @@ body {
 
 .nav-masthead .nav-link {
   padding: .25rem 0;
+<<<<<<< HEAD
   font-weight: 700;
+=======
+  font-weight: bold;
+>>>>>>> design
   color: rgba(255,255,255,.5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
@@ -112,7 +126,11 @@ body {
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
+<<<<<<< HEAD
   font-weight: 700;
+=======
+  font-weight: bold;
+>>>>>>> design
 }
 
 
@@ -139,12 +157,18 @@ body {
     position: fixed;
     bottom: 0;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> design
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> design
   /* Handle the widths */
   .masthead,
   .mastfoot,
@@ -157,6 +181,53 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
+<<<<<<< HEAD
     width: 42rem;
   }
 }
+=======
+    width: 55rem;
+  }
+}
+
+/*
+ * Custom Styles
+ */
+
+.card-block {
+  color: black;
+  text-align: left;
+}
+
+.auth-links a {
+  color: black;
+}
+
+.register-text {
+  text-align: right;
+}
+
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+}
+
+.app-nav span {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> design
