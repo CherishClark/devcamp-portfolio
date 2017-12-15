@@ -6,18 +6,23 @@
 
     <div class="col-md-5">
 
-        <h1><%= @portfolio.title%></h1>
-        <em><%= @portfolio.subtitle%></em>
-        <p><%= @portfolio.body%></p>
+      <h1><%= @portfolio.title%></h1>
+      
+      <hr>
 
-        <h2>Technologies Used:</h2>
+      <em><%= @portfolio.subtitle%></em>
+      <p><%= @portfolio.body%></p>
 
-        <% @portfolio.technologies.each do |t| %>
-        <p><%= t.name %></p>
-        <% end %>
+      <hr>
+
+      <h3>Technologies Used:</h3>
+
+      <% @portfolio.technologies.each do |t| %>
+      <p><%= t.name %></p>
+      <% end %>
     </div>
   </div>
-  </div>
+</div>
 
 
  
