@@ -8,10 +8,9 @@
 
     <meta name ="keywords" content="<%= @seo_keywords %>" />
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
 
   </head>
 
@@ -21,16 +20,16 @@
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
+          <div id="background"></div>
 
           <%= render "shared/application_nav" %>
-
-     
 
           <%= yield %>
 
           <%= render "shared/application_footer" %>       
 
           <%= source_helper("application")%>
+
         </div>
 
       </div>
