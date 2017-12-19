@@ -39,6 +39,11 @@ module ApplicationHelper
     {
       url: portfolios_path,
       title: 'Portfolios'
+    },
+
+    {
+      url: tech_news_path,
+      title: 'Tech News'
     }
 
     ]
