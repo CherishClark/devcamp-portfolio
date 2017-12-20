@@ -1,26 +1,25 @@
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-7">
-      <%= image_tag @portfolio_item.main_image %>
-    </div>
+<div class="col-sm-8 blog-main">
 
-    <div class="col-md-5">
-      <h1><%= @portfolio_item.title %></h1>
+  <h2><%= @blog.title %></h2>
 
-      <hr>
+  <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
 
-      <em><%= @portfolio_item.subtitle %></em>
+  <p>
+    <%= @blog.body %>
+  </p>
 
-      <p><%= @portfolio_item.body %></p>
+  <% unless current_user.is_a? GuestUser %>
+    <%= form_for @comment, url: '#' do |f| %>
+      <div class="form-group">
+        <%= f.label :content %>
+        <%= f.text_area :content, class: 'form-control' %>
+        <%= f.submit 'Post Comment', class: 'btn btn-primary' %>
+        
+      </div>
+    <% end %>
+  <% end %>
 
-      <hr>
-
-      <h3>Technologies Used:</h3>
-
-      <% @portfolio_item.technologies.each do |t| %>
-      <p><%= t.name %></p>
-      <% end %>
-    </div>
-  </div>
+  <%= render @blog.comments %>
 </div>
+
