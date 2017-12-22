@@ -2,6 +2,7 @@
 @import "font-awesome";
 @import "gritter";
 
+
 /*
  * Globals
  */
@@ -32,7 +33,7 @@ h6, .h6 {
 /*
  * Override Bootstrap's default container.
  */
-
+@import url('https://fonts.googleapis.com/css?family=Antic+Didone');
 .container {
   max-width: 60rem;
 }
@@ -44,7 +45,7 @@ h6, .h6 {
 
 .blog-masthead {
   margin-bottom: 3rem;
-  background-color: #428bca;
+  background-color: #e0dac7;
   -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
           box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
 }
@@ -54,17 +55,33 @@ h6, .h6 {
   position: relative;
   padding: 1rem;
   font-weight: 500;
-  color: #cdddeb;
+  color: #70764c;
+  font-family: 'Marcellus', serif;
 }
 .nav-link:hover,
 .nav-link:focus {
   color: #fff;
   background-color: transparent;
+
 }
 
 /* Active state gets a caret at the bottom */
 .nav-link.active {
-  color: #fff;
+  color: #d0d6a7;
+  background-color: #fffffa;
+   border-bottom: 5px solid #9fa578;
+   border-bottom-style: double;
+   border-bottom-left-radius: 50%;
+   border-bottom-right-radius: 50%;
+  border-top: 5px solid #9fa578;
+  border-top-style: double;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-left: 5px solid #9fa578;
+  border-left-style: double;
+  border-right: 5px solid #9fa578;
+  border-right-style: double;
+
 }
 .nav-link.active:after {
   position: absolute;
@@ -75,9 +92,7 @@ h6, .h6 {
   margin-left: -.3rem;
   vertical-align: middle;
   content: "";
-  border-right: .3rem solid transparent;
-  border-bottom: .3rem solid;
-  border-left: .3rem solid transparent;
+
 }
 
 
@@ -92,17 +107,20 @@ h6, .h6 {
 }
 .blog-title {
   margin-bottom: 0;
+
   font-size: 2rem;
   font-weight: normal;
 }
 .blog-description {
   font-size: 1.1rem;
   color: #999;
+  font-family: 'Marcellus', serif;
 }
 
 @media (min-width: 40em) {
   .blog-title {
     font-size: 3.5rem;
+    font-family: 'Marcellus', serif;
   }
 }
 
@@ -147,6 +165,7 @@ h6, .h6 {
 .blog-post-title {
   margin-bottom: .25rem;
   font-size: 2.5rem;
+  font-family: 'Marcellus', serif;
 }
 .blog-post-meta {
   margin-bottom: 1.25rem;
@@ -180,6 +199,7 @@ h6, .h6 {
   
 }
 
+
 .blogcrumb a {
 
   font-size: 1.25em;
@@ -189,4 +209,12 @@ h6, .h6 {
 .blog-sidebar-source {
 
   margin-top: 20px
+
+// custom styles
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: 'Marcellus', serif;
+
 }
