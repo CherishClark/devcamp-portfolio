@@ -25,3 +25,14 @@ end
 ```javascript
 alert('Hithere')
 ```
+
+### Wish List
+-Update background color to neutral for applicationlayout
+-white border for application layout
+-Create nav bar that looks engraved into neutral background
+-make application navbar responsive 
+-Create collapsable side nav bar for blog
+-Page transitions
+-fix duplicate alerts
+-create stackable portfolio/parallelagrams
+-return to the same page when you login/signup
