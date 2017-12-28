@@ -33,6 +33,10 @@ alert('Hithere')
 -make application navbar responsive 
 -Create collapsable side nav bar for blog
 -Page transitions
--fix duplicate alerts
 -create stackable portfolio/parallelagrams
 -return to the same page when you login/signup
+
+### bugs
+-about page: fix inability to click on last dropdown bec ause footer is blocking on 
+-fix duplicate alerts
+-home page buttons stack on top of each other

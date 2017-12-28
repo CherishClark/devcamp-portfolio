@@ -1,4 +1,6 @@
 @import "bootstrap";
+@import "bootstrap";
+@import "font-awesome";
 @import "gritter";
 @import url('https://fonts.googleapis.com/css?family=Antic+Didone|Bentham|Marcellus|Oxygen:300|Poppins:300');
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro:100');
@@ -238,7 +240,23 @@ h5, h6 {
 
 .app-footer {
   color: olive;
+  display: inline-block;
 }
+.social-media {
+  list-style: none;
+  display: inline-block;
+  float: right;
+}
+
+.social-media li {
+  display: inline;
+}
+.social-media i {
+  display: inline-block;
+  color: red;
+
+}
+
 .nav-masthead .nav-link  {
   padding: 5px;
  }
@@ -279,4 +297,19 @@ h5, h6 {
 .skill {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+// test for rotating arrow
+
+.rotate{
+    -moz-transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+}
+
+.rotate.down{
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }

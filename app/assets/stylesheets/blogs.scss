@@ -1,6 +1,8 @@
 @import "bootstrap";
 @import "font-awesome";
 @import "gritter";
+@import url('https://fonts.googleapis.com/css?family=Antic+Didone|Bentham|Marcellus|Oxygen:300|Poppins:300');
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro:100');
 
 
 /*
@@ -18,15 +20,13 @@ body {
   color: #555;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  font-family: 'Marcellus', serif;
-  font-weight: normal;
-  color: #333;
+h1, h2,
+h3, h4,
+h5, h6 {
+  font-family: 'Advent Pro', sans-serif;
+  font-weight:bolder;
+  font-size: 4em;
+
 }
 
 
@@ -39,63 +39,107 @@ h6, .h6 {
 }
 
 
+// /*
+//  * Masthead for nav
+//  */
+
+// .blog-masthead {
+//   margin-bottom: 3rem;
+//   background-color: #e0dac7;
+//     -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
+//           box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
+  
+// }
+
+// /* Nav links */
+// .nav-link {
+//   position: relative;
+//   padding: 1rem;
+//   font-weight: 500;
+//   color: #70764c;
+
+// }
+// .nav-link:hover,
+// .nav-link:focus {
+//   color: #fff;
+//   background-color: transparent;
+
+// }
+
+// /* Active state gets a caret at the bottom */
+// .nav-link.active {
+//   color: #d0d6a7;
+//   background-color: #fffffa;
+//    border-bottom: 5px solid #9fa578;
+//    border-bottom-style: double;
+//    border-bottom-left-radius: 50%;
+//    border-bottom-right-radius: 50%;
+//   border-top: 5px solid #9fa578;
+//   border-top-style: double;
+//   border-top-left-radius: 50%;
+//   border-top-right-radius: 50%;
+//   border-left: 5px solid #9fa578;
+//   border-left-style: double;
+//   border-right: 5px solid #9fa578;
+//   border-right-style: double;
+
+// }
+// .nav-link.active:after {
+//   position: absolute;
+//   bottom: 0;
+//   left: 50%;
+//   width: 0;
+//   height: 0;
+//   margin-left: -.3rem;
+//   vertical-align: middle;
+//   content: "";
+
+// }
+
 /*
- * Masthead for nav
+ * Header
  */
 
-.blog-masthead {
-  margin-bottom: 3rem;
-  background-color: #e0dac7;
-    -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
-          box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
-  
+.masthead {
+  margin-bottom: 2rem;
 }
 
-/* Nav links */
-.nav-link {
-  position: relative;
-  padding: 1rem;
-  font-weight: 500;
-  color: #70764c;
-
+.masthead-brand {
+  margin-bottom: 0;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #fff;
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  color: olive;
   background-color: transparent;
-
+  border-bottom: .25rem solid transparent;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 1.25em;
 }
 
-/* Active state gets a caret at the bottom */
-.nav-link.active {
-  color: #d0d6a7;
-  background-color: #fffffa;
-   border-bottom: 5px solid #9fa578;
-   border-bottom-style: double;
-   border-bottom-left-radius: 50%;
-   border-bottom-right-radius: 50%;
-  border-top: 5px solid #9fa578;
-  border-top-style: double;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-left: 5px solid #9fa578;
-  border-left-style: double;
-  border-right: 5px solid #9fa578;
-  border-right-style: double;
-
-}
-.nav-link.active:after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -.3rem;
-  vertical-align: middle;
-  content: "";
-
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255,255,255,.25);
 }
 
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #red;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    justify-content: center;
+  }
+}
 
 /*
  * Blog name and description
