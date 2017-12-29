@@ -1,9 +1,24 @@
  
-<div class="col-md-4">
-   <div class="card" data-id="<%=portfolio_item.id %>">
-    <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb'), width: '100%' %> 
-    <p class="card-text">
-      <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %> </span>
-    </p>
-   </div>
-</div>
+<% if portfolio_item.id % 2 == 0 %>
+  <div class="col-md-6">
+     <div class= "portfolio left" data-id="<%=portfolio_item.id %>">
+      <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb'), width: '100%' %> 
+     </div>
+  </div>
+  <div class="col-md-6">
+    <%= portfolio_item.body %>
+  </div>
+
+<% else %>  
+ <div class="col-md-6">
+    <%= portfolio_item.body %>
+  </div>
+  <div class="col-md-6">
+     <div class= "portfolio left" data-id="<%=portfolio_item.id %>">
+      <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb'), width: '100%' %> 
+     </div>
+  </div>
+
+ 
+  
+<% end %>

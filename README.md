@@ -36,6 +36,9 @@ alert('Hithere')
 -create stackable portfolio/parallelagrams
 -return to the same page when you login/signup
 
+### refactor
+-job submissions
+
 ### bugs
 -about page: fix inability to click on last dropdown bec ause footer is blocking on 
 -fix duplicate alerts

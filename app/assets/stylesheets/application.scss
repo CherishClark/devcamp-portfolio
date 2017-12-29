@@ -22,7 +22,7 @@ a:hover {
 .btn-secondary:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: olive;
+  background-color: #9e9d24;
   border: .05rem solid #fff;
 }
 
@@ -68,6 +68,8 @@ h5, h6 {
 
   display: table-cell;
   vertical-align: top;
+  background-color: #f9f9f9;
+  border: solid 10px #ffffff;
 }
 .cover-container {
   margin-right: auto;
