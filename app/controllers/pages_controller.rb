@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   def home
     @posts = Blog.all
     @skills = Skill.all
+    @portfolio_items = Portfolio.by_position
   end
 
   def about

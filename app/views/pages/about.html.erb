@@ -1,47 +1,9 @@
-  <div class="app-card-container">
-      <h1>All About Cherish</h1>
+<div class="app-card-container">
 
-    <hr>
-
-    <div class="row">
-      <div class="col-md-4" >
-        
-        <%= image_tag "baby.jpg", width: "100%", alt: "profile image" %>
-
-        <div class="skills">
-<!--           <#% @skills.each do |skill| %>
-            <h4><%#= skill.title %></h4>
-              <div class="skill">
-                <div class="progress">
-                  <div 
-                    class="progress-bar progress-bar-striped bg-warning"
-                    role="progressbar"
-                    aria-valuenow="<%#= skill.percent_utilized %>" 
-                    aria-valuemax="100"
-                    style="width: <%#= skill.percent_utilized %>%"
-                    >
-                  </div>
-              </div>
-              </div>
-              
-          <%# end %> -->
-
-          </div>
-
-      </div>
-
-      <div class='col-md-8'>
-
-        <p> stuff about cherish
-          stuff about cherishstuff about cherishstuff about cherishstuff about cherishstuff about cherishstuff about cherishstuff about cherishstuff about 
-        </p>
-      </div>
-
-    </div>
-    <p>
-        <div>Job History
-        
-
+  <div>
+    <h1 id="about-name">   <%= image_tag "baby.jpg", id: "profile-image"%> Cherish Clark</h1>
+    <div class="about"> 
+      <h1> Job History
         <i class="fa fa-angle-down rotate" 
         aria-hidden="true"
         data-toggle="collapse"
@@ -49,32 +11,31 @@
         aria-expanded="false"
         aria-controler="jobHistory">
         </i>
-        </div>
-    </p>
+      </h1>
 
-    <p>
       <div class="collapse" id="jobHistory">
+
         <hr>
 
-        <h3 class="job company">
+        <h2 class="job company">
           Goldman Sachs
-        </h3>        
+        </h2> 
+
         <div class="job title">
           Senior Analyst
-        </div><div class="job dates">
+        </div>
+
+        <div class="job dates">
           June 2014 - May 2017
         </div>
+
         <div class="job description">
           Managed derivative workflow for 100+ clients, providing legal documentation for complex, sensitive deals while meeting stringent regulatory deadlines. Filled team lead roles in lieu of Associate Analyst. Managed Excel reports sent to senior leadership and 150 people and informing management of team progress.
         </div>
             
-      </div>
+       </div>
 
-    </p>
-
-    <p>
-
-      <div>Education
+       <h1>Education
         <i class="fa fa-angle-down rotate" 
         aria-hidden="true"
         data-toggle="collapse"
@@ -82,13 +43,13 @@
         aria-expanded="false"
         aria-controler="education">
         </i>
-      </div>
+       </h1>
 
-      <div class="collapse" id="education">
+       <div class="collapse" id="education">
         <hr>
-        <h3 class="education school">
+        <h2 class="education school">
           Bottega
-        </h3>        
+        </h2>        
 
         <div class="job dates">
           June 2014 - May 2017
@@ -96,8 +57,9 @@
         <div class="job description">
           Managed derivative workflow for 100+ clients, providing legal documentation for complex, sensitive deals while meeting stringent regulatory deadlines. Filled team lead roles in lieu of Associate Analyst. Managed Excel reports sent to senior leadership and 150 people and informing management of team progress.
         </div>       
-      </div>
-    </p>
-
+       </div>
+     </div>
   </div>
+
+</div>
 

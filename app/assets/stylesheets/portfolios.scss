@@ -2,10 +2,43 @@
 @import "jquery-ui";
 @import "gritter";
 
+@import url('https://fonts.googleapis.com/css?family=Antic+Didone|Bentham|Marcellus|Oxygen:300|Poppins:300');
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro:100');
+@import url('https://fonts.googleapis.com/css?family=News+Cycle');
+
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
+  font-family: 'News Cycle', sans-serif;
+  color: black;
 }
 
+// nav bar
+
+
+.nav-masthead .nav-link {
+  padding: 0px 8px 0px 8px;
+  font-weight: bold;
+  color: olive;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 1.25em;
+  text-shadow: .25px .25px;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: #c6c6c6;
+  border-width: thin;
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+.nav-masthead {
+  justify-content: center;
+}
+//  end nav bar
 .navbar {
   margin-bottom: 0;
 }
@@ -14,7 +47,7 @@ body {
   padding-top: 6rem;
   padding-bottom: 6rem;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: #9e9c22;
 }
 
 .jumbotron p:last-child {
@@ -33,7 +66,7 @@ body {
   min-height: 50rem; /* Can be removed; just added for demo purposes */
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
 }
 
 // .card {
@@ -55,16 +88,25 @@ body {
 .portfolio {
 
 }
-
-.portfolio .left img {
-  width: 0;
-  height: 0;
-  border-top: 50px solid transparent;
-  border-right: 100px solid red;
-  border-bottom: 50px solid transparent;
-
+.portfolio .left {
+  width: 100%
 }
 
+.portfolio.right {
+  width: 100%;
+}
+
+img {
+
+  position: relative;
+}
+
+
+
+.col-md-6 {
+  padding: 40px 10px 40px 10px;
+  margin: 0px;
+}
 
 
 footer {
