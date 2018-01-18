@@ -1,23 +1,27 @@
 <div class="app-card-container">
 
   <div>
-    <h1 id="about-name">   <%= image_tag "baby.jpg", id: "profile-image"%> Cherish Clark</h1>
-    <div class="about"> 
-      <h1> Job History
-        <i class="fa fa-angle-down rotate" 
-        aria-hidden="true"
-        data-toggle="collapse"
-        data-target="#jobHistory"
-        aria-expanded="false"
-        aria-controler="jobHistory">
-        </i>
-      </h1>
+    <h1 id="about-name">    Cherish Clark</h1>
+      <!-- Nav tabs -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Work History</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Education</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Skills</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Interests</a>
+  </li>
+</ul>
 
-      <div class="collapse" id="jobHistory">
-
-        <hr>
-
-        <h2 class="job company">
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+     <h2 class="job company">
           Goldman Sachs
         </h2> 
 
@@ -32,22 +36,9 @@
         <div class="job description">
           Managed derivative workflow for 100+ clients, providing legal documentation for complex, sensitive deals while meeting stringent regulatory deadlines. Filled team lead roles in lieu of Associate Analyst. Managed Excel reports sent to senior leadership and 150 people and informing management of team progress.
         </div>
-            
-       </div>
-
-       <h1>Education
-        <i class="fa fa-angle-down rotate" 
-        aria-hidden="true"
-        data-toggle="collapse"
-        data-target="#education"
-        aria-expanded="false"
-        aria-controler="education">
-        </i>
-       </h1>
-
-       <div class="collapse" id="education">
-        <hr>
-        <h2 class="education school">
+  </div>
+  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <h2 class="education school">
           Bottega
         </h2>        
 
@@ -57,9 +48,10 @@
         <div class="job description">
           Managed derivative workflow for 100+ clients, providing legal documentation for complex, sensitive deals while meeting stringent regulatory deadlines. Filled team lead roles in lieu of Associate Analyst. Managed Excel reports sent to senior leadership and 150 people and informing management of team progress.
         </div>       
-       </div>
-     </div>
   </div>
-
+  <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">test one more time</div>
+  <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">yep</div>
 </div>
+
+
 
